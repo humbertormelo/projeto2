@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  min-height: 100vh; /*vh toda area visivel disponivel*/
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto 0;
+  padding-top: 65px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /*colocando o logo do lado do menu*/
+  align-items: center; /*centralizando com o os itens da lista ul*/
+  margin-bottom: 55px; /*colocando um espaco embaixo do menu*/
+  
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 48px; /*colocando um espaco entre os itens da lista*/
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+/*Tira o sublinhando do link*/
+a {
+  color: #1F1534;
+  text-decoration: none;
+}
+
+ul li a {
+  opacity: 0.5px;
+}
+
+/*Sempre que passar o mouse pelo menu o item vai ficar em negrito*/
+ul li a:hover {
+  font-weight: bold;
+  opacity: 0.5px;
+}
+
+h1 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 41px;
+  list-style: 56px;
+  color: #1F1534;
+  width: 490px;
+}
+
+main {
+  display: flex; /*colocando os elementos do main um ao lado do outro*/
+  align-items: center; /*alinhando os itens no centro*/
+  justify-content: space-between;
+}
+
+h1 span {
+  color: #89C5CC;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;/*Tamanho da linha*/
+  color: #7D7987;
+  margin: 40px 0; /*40 em cima, 40 em baixo, 0 laterais*/
+}
+
+button {
+  background-color: #69B99D;
+  border: none;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px 15px;
+  gap: 10px;
+  border-radius: 4px; /*colocando arendodamento no botao*/
+  cursor: pointer; /*colocando para aparecer a maozinha quando passa o mouse pelo botao*/
+
+  color: white;
+  text-transform: uppercase; /*Transformando todo o texto em caixa alta*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*trocando o botao de cor quando passar o mouse em cima*/
+button:hover {
+  background-color: #4c7b6b;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
